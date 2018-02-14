@@ -1,0 +1,8 @@
+{
+  "name": "analyze-css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/t--takai/analyze-css.git",
+  "author": "tomonari takai <takai01010100@gmail.com>",
+  "license": "MIT"
+}
