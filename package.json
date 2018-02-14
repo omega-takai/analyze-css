@@ -4,13 +4,15 @@
   "main": "index.js",
   "repository": "https://github.com/t--takai/analyze-css.git",
   "scripts": {
+    "stylestats": "stylestats -p",
     "parker": "parker",
-    "test": "curl http://www.katiefenn.co.uk/css/shuttle.css -s | parker -s",
+    "test": "curl https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css -s | parker -s",
     "stop": "echo \"Error: no echo specified\" "
   },
   "author": "tomonari takai <takai01010100@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "parker": "^0.0.10"
+    "parker": "^0.0.10",
+    "stylestats": "^7.0.1"
   }
 }

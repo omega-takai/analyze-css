@@ -30,27 +30,115 @@ $ yarn run parker -- {file/to/path}
 Test result
 
 ```bash
-$ curl http://www.katiefenn.co.uk/css/shuttle.css -s | parker -s
+$ curl https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css -s | parker -s
 PARKER-JS
 Total Stylesheets: 1
-Total Stylesheet Size: 9340
-Total Rules: 14
-Total Selectors: 14
-Total Identifiers: 21
-Total Declarations: 38
-Selectors Per Rule: 1
-Identifiers Per Selector: 1.7857142857142858
-Specificity Per Selector: 19.428571428571427
-Top Selector Specificity: 101
-Top Selector Specificity Selector: #suggestions a
-Total Id Selectors: 2
-Total Unique Colors: 5
-Unique Colors: #F1F1F1,#4183C4,#FFFFFF,#CCCCCC,#666666
+Total Stylesheet Size: 6052
+Total Rules: 33
+Total Selectors: 54
+Total Identifiers: 66
+Total Declarations: 56
+Selectors Per Rule: 1.6363636363636365
+Identifiers Per Selector: 1.2222222222222223
+Specificity Per Selector: 4.722222222222222
+Top Selector Specificity: 20
+Top Selector Specificity Selector: [type="button"]:-moz-focusring
+Total Id Selectors: 0
+Total Unique Colors: 0
+Unique Colors:
 Total Important Keywords: 0
-Total Media Queries: 6
-Media Queries: only screen and (-webkit-min-device-pixel-ratio: 2),only screen and ( min--moz-device-pixel-ratio: 2),only screen and ( -o-min-device-pixel-ratio: 2/1),only screen and ( min-device-pixel-ratio: 2),only screen and ( min-resolution: 192dpi),only screen and ( min-resolution: 2dppx)
+Total Media Queries: 0
+Media Queries:
 
-✨  Done in 2.29s.
+✨  Done in 0.76s.
+```
+
+The path is executed even with 404.
+
+### StyleStats
+
+```bash
+$ yarn run stylestats -- {file/to/path}
+```
+
+Test result
+
+```bash
+$ stylestats path/to/stylesheet.css
+StyleStats!
+┌─────────────────────────────────┬──────────────────────────┐
+│ Published                       │ June 14, 2017 10:35 AM   │
+├─────────────────────────────────┼──────────────────────────┤
+│ Paths                           │ path/to/stylesheet.css   │
+├─────────────────────────────────┼──────────────────────────┤
+│ Style Sheets                    │ 1                        │
+├─────────────────────────────────┼──────────────────────────┤
+│ Style Elements                  │ 0                        │
+├─────────────────────────────────┼──────────────────────────┤
+│ Size                            │ 240.0B                   │
+├─────────────────────────────────┼──────────────────────────┤
+│ Data URI Size                   │ 0                        │
+├─────────────────────────────────┼──────────────────────────┤
+│ Ratio of Data URI Size          │ 0                        │
+├─────────────────────────────────┼──────────────────────────┤
+│ Gzipped Size                    │ 158.0B                   │
+├─────────────────────────────────┼──────────────────────────┤
+│ Rules                           │ 7                        │
+├─────────────────────────────────┼──────────────────────────┤
+│ Selectors                       │ 12                       │
+├─────────────────────────────────┼──────────────────────────┤
+│ Simplicity                      │ 58.3%                    │
+├─────────────────────────────────┼──────────────────────────┤
+│ Average of Identifier           │ 1.250                    │
+├─────────────────────────────────┼──────────────────────────┤
+│ Most Identifier                 │ 3                        │
+├─────────────────────────────────┼──────────────────────────┤
+│ Most Identifier Selector        │ .foo .bar .baz           │
+├─────────────────────────────────┼──────────────────────────┤
+│ Average of Cohesion             │ 1.429                    │
+├─────────────────────────────────┼──────────────────────────┤
+│ Lowest Cohesion                 │ 2                        │
+├─────────────────────────────────┼──────────────────────────┤
+│ Lowest Cohesion Selector        │ .foo                     │
+├─────────────────────────────────┼──────────────────────────┤
+│ Total Unique Font Sizes         │ 2                        │
+├─────────────────────────────────┼──────────────────────────┤
+│ Unique Font Sizes               │ 12px                     │
+│                                 │ 16px                     │
+├─────────────────────────────────┼──────────────────────────┤
+│ Total Unique Font Families      │ 0                        │
+├─────────────────────────────────┼──────────────────────────┤
+│ Unique Font Families            │ N/A                      │
+├─────────────────────────────────┼──────────────────────────┤
+│ Total Unique Colors             │ 3                        │
+├─────────────────────────────────┼──────────────────────────┤
+│ Unique Colors                   │ #333333                  │
+│                                 │ #CCCCCC                  │
+│                                 │ RED                      │
+├─────────────────────────────────┼──────────────────────────┤
+│ Total Unique Background Images  │ 0                        │
+├─────────────────────────────────┼──────────────────────────┤
+│ Unique Background Images        │ N/A                      │
+├─────────────────────────────────┼──────────────────────────┤
+│ ID Selectors                    │ 1                        │
+├─────────────────────────────────┼──────────────────────────┤
+│ Universal Selectors             │ 1                        │
+├─────────────────────────────────┼──────────────────────────┤
+│ Unqualified Attribute Selectors │ 1                        │
+├─────────────────────────────────┼──────────────────────────┤
+│ JavaScript Specific Selectors   │ 0                        │
+├─────────────────────────────────┼──────────────────────────┤
+│ Important Keywords              │ 1                        │
+├─────────────────────────────────┼──────────────────────────┤
+│ Float Properties                │ 1                        │
+├─────────────────────────────────┼──────────────────────────┤
+│ Properties Count                │ color: 4                 │
+│                                 │ font-size: 3             │
+│                                 │ margin: 2                │
+│                                 │ float: 1                 │
+├─────────────────────────────────┼──────────────────────────┤
+│ Media Queries                   │ 0                        │
+└─────────────────────────────────┴──────────────────────────┘
 ```
 
 ***
