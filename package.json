@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/t--takai/analyze-css.git",
+  "scripts": {
+    "parker": "parker",
+    "test": "curl http://www.katiefenn.co.uk/css/shuttle.css -s | parker -s",
+    "stop": "echo \"Error: no echo specified\" "
+  },
   "author": "tomonari takai <takai01010100@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "parker": "^0.0.10"
+  }
 }
