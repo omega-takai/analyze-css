@@ -1,0 +1,25 @@
+{
+  "name": "analyze-css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/t--takai/analyze-css.git",
+  "scripts": {
+    "stylestats": "stylestats -p",
+    "parker": "parker",
+    "csss": "csss --files",
+    "analyze-css": "analyze-css --pretty --file",
+    "list-selectors": "list-selectors",
+    "test": "parker node_modules/normalize.css/normalize.css",
+    "stop": "echo \"Error: no echo specified\" "
+  },
+  "author": "tomonari takai <takai01010100@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "analyze-css": "^0.12.5",
+    "csss": "^1.1.1",
+    "list-selectors": "^2.0.0",
+    "normalize.css": "^8.0.0",
+    "parker": "^0.0.10",
+    "stylestats": "^7.0.1"
+  }
+}
