@@ -14,11 +14,11 @@ $ yarn
 ## Running 🚀
 
 ```bash
-$ yarn run analyze-css -- {file/to/path}
-$ yarn run list-selectors -- {file/to/path}
-$ yarn run csss -- {file/to/path}
-$ yarn run parker -- {file/to/path}
-$ yarn run stylestats -- {file/to/path}
+$ yarn run analyze-css -- {path/to/file}
+$ yarn run list-selectors -- {path/to/file} --pretty --include selectors
+$ yarn run csss -- {path/to/file}
+$ yarn run parker -- {path/to/file}
+$ yarn run stylestats -- {path/to/file}
 ```
 
 ### Execution results
