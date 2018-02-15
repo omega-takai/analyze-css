@@ -116,6 +116,7 @@ $ list-selectors node_modules/normalize.css/normalize.css --pretty --include sel
         "[type=\"submit\"]::-moz-focus-inner",
         "[type=\"submit\"]:-moz-focusring"
     ]
+}
 ✨  Done in 0.45s.
 ```
 
@@ -179,7 +180,62 @@ $ analyze-css --pretty --file node_modules/normalize.css/normalize.css
       "abbr[title] {text-decoration: underline dotted} @ 80:3"
     ]
   }
+}
 ✨  Done in 0.28s.
+```
+
+### Package - CSS Shampoo
+
+```bash
+$ yarn run csss -- {file/to/path}
+```
+
+Test result
+
+```bash
+$ yarn run csss -- node_modules/normalize.css/normalize.css
+$ csss --files node_modules/normalize.css/normalize.css
+CSSS START
+
+Looking for muliple selectors in
+node_modules/normalize.css/normalize.css
+
+DUPLICATE: sub
+    line 117
+    line 125
+    sharing 0 properties
+
+DUPLICATE: sup
+    line 117
+    line 129
+    sharing 0 properties
+
+DUPLICATE: button
+    line 152
+    line 168
+    line 178
+    line 187
+    sharing 1 property
+
+DUPLICATE: input
+    line 152
+    line 168
+    sharing 1 property
+
+DUPLICATE: select
+    line 152
+    line 178
+    sharing 1 property
+
+DUPLICATE: textarea
+    line 152
+    line 253
+    sharing 1 property
+
+Duplicate selectors: 14
+
+CSSS END
+✨  Done in 0.48s.
 ```
 
 ### Package - StyleStats
