@@ -6,12 +6,13 @@
   "scripts": {
     "stylestats": "stylestats -p",
     "parker": "parker",
-    "test": "curl https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css -s | parker -s",
+    "test": "parker node_modules/normalize.css/normalize.css",
     "stop": "echo \"Error: no echo specified\" "
   },
   "author": "tomonari takai <takai01010100@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "normalize.css": "^8.0.0",
     "parker": "^0.0.10",
     "stylestats": "^7.0.1"
   }
