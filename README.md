@@ -65,13 +65,6 @@ $ yarn run list-selectors -- {file/to/path}
 Test result
 
 ```bash
-$ yarn run list-selectors -- node_modules/normalize.css/normalize.css
-$ list-selectors node_modules/normalize.css/normalize.css
-{"selectors":["::-webkit-file-upload-button","a","abbr[title]","b","body","button","button::-moz-focus-inner","button:-moz-focusring","code","details","fieldset","h1","[hidden]","hr","html","img","input","kbd","legend","optgroup","pre","progress","samp","select","small","strong","sub","summary","sup","template","textarea","[type=\"button\"]","[type=\"button\"]::-moz-focus-inner","[type=\"button\"]:-moz-focusring","[type=\"checkbox\"]","[type=\"number\"]::-webkit-inner-spin-button","[type=\"number\"]::-webkit-outer-spin-button","[type=\"radio\"]","[type=\"reset\"]","[type=\"reset\"]::-moz-focus-inner","[type=\"reset\"]:-moz-focusring","[type=\"search\"]","[type=\"search\"]::-webkit-search-decoration","[type=\"submit\"]","[type=\"submit\"]::-moz-focus-inner","[type=\"submit\"]:-moz-focusring"],"simpleSelectors":{"all":["a","abbr","b","body","button","code","details","fieldset","h1","[hidden]","hr","html","img","input","kbd","legend","optgroup","pre","progress","samp","select","small","strong","sub","summary","sup","template","textarea","[title]","[type=\"button\"]","[type=\"checkbox\"]","[type=\"number\"]","[type=\"radio\"]","[type=\"reset\"]","[type=\"search\"]","[type=\"submit\"]"],"ids":[],"classes":[],"attributes":["[hidden]","[title]","[type=\"button\"]","[type=\"checkbox\"]","[type=\"number\"]","[type=\"radio\"]","[type=\"reset\"]","[type=\"search\"]","[type=\"submit\"]"],"types":["a","abbr","b","body","button","code","details","fieldset","h1","hr","html","img","input","kbd","legend","optgroup","pre","progress","samp","select","small","strong","sub","summary","sup",
-✨  Done in 0.47s.
-```
-
-```bash
 $ yarn run list-selectors -- node_modules/normalize.css/normalize.css --pretty --include selectors
 $ list-selectors node_modules/normalize.css/normalize.css --pretty --include selectors
 {
@@ -124,6 +117,69 @@ $ list-selectors node_modules/normalize.css/normalize.css --pretty --include sel
         "[type=\"submit\"]:-moz-focusring"
     ]
 ✨  Done in 0.45s.
+```
+
+### Package - analyze-css
+
+```bash
+$ yarn run analyze-css -- {file/to/path}
+```
+
+Test result
+
+```bash
+$ yarn run analyze-css -- node_modules/normalize.css/normalize.css
+$ analyze-css --pretty --file node_modules/normalize.css/normalize.css
+{
+  "generator": "analyze-css v0.12.5",
+  "metrics": {
+    "base64Length": 0,
+    "redundantBodySelectors": 0,
+    "redundantChildNodesSelectors": 0,
+    "colors": 0,
+    "comments": 70,
+    "commentsLength": 3495,
+    "complexSelectors": 0,
+    "duplicatedSelectors": 0,
+    "duplicatedProperties": 1,
+    "emptyRules": 0,
+    "expressions": 0,
+    "oldIEFixes": 0,
+    "imports": 0,
+    "importants": 0,
+    "mediaQueries": 0,
+    "notMinified": 1,
+    "multiClassesSelectors": 0,
+    "parsingErrors": 0,
+    "oldPropertyPrefixes": 1,
+    "propertyResets": 0,
+    "qualifiedSelectors": 0,
+    "specificityIdAvg": 0,
+    "specificityIdTotal": 0,
+    "specificityClassAvg": 0.39,
+    "specificityClassTotal": 21,
+    "specificityTagAvg": 0.83,
+    "specificityTagTotal": 45,
+    "selectors": 54,
+    "selectorLengthAvg": 1,
+    "selectorsByAttribute": 17,
+    "selectorsByClass": 0,
+    "selectorsById": 0,
+    "selectorsByPseudo": 12,
+    "selectorsByTag": 37,
+    "length": 6052,
+    "rules": 33,
+    "declarations": 56
+  },
+  "offenders": {
+    "oldPropertyPrefixes": [
+      "html { -webkit-text-size-adjust: 100% } // was required by UC Browser for Android 9.9, iOS Safari 9.3 and earlier @ 13:3"
+    ],
+    "duplicatedProperties": [
+      "abbr[title] {text-decoration: underline dotted} @ 80:3"
+    ]
+  }
+✨  Done in 0.28s.
 ```
 
 ### Package - StyleStats
