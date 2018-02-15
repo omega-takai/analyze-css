@@ -23,12 +23,12 @@ $ yarn run stylestats -- {file/to/path}
 
 ### Execution results
 
-- [Execution results](/blob/master/docs/test_result.md)
-  - [analyze-css](/blob/master/docs/test_result.md#analyze-css)
-  - [list-selectors](/blob/master/docs/test_result.md#list-selectors)
-  - [CSS Shampoo](/blob/master/docs/test_result.md#css-shampoo)
-  - [PARKER](/blob/master/docs/test_result.md#parker)
-  - [StyleStats](/blob/master/docs/test_result.md#stylestats)
+- [Execution results](docs/test_result.md)
+  - [analyze-css](docs/test_result.md#analyze-css)
+  - [list-selectors](docs/test_result.md#list-selectors)
+  - [CSS Shampoo](docs/test_result.md#css-shampoo)
+  - [PARKER](docs/test_result.md#parker)
+  - [StyleStats](docs/test_result.md#stylestats)
 
 ***
 
