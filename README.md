@@ -50,3 +50,11 @@ $ yarn run stylestats {path/to/file}
 ## Thanks & Resources
 
 * **Reference**
+  * https://github.com/macbre/analyze-css
+  * https://github.com/davidtheclark/list-selectors
+  * https://github.com/webycel/csss
+  * https://github.com/katiefenn/parker
+  * https://github.com/t32k/stylestats
+* **Interested**
+  * https://github.com/cssstats/cssstats
+  * https://github.com/zmoazeni/csscss
