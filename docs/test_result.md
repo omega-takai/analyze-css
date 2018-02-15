@@ -13,7 +13,7 @@ I did a test run of the package. Below is a description of what type of report i
 ## analyze-css
 
 ```bash
-$ yarn run analyze-css -- node_modules/normalize.css/normalize.css
+$ yarn run analyze-css node_modules/normalize.css/normalize.css
 $ analyze-css --pretty --file node_modules/normalize.css/normalize.css
 {
   "generator": "analyze-css v0.12.5",
@@ -71,7 +71,7 @@ $ analyze-css --pretty --file node_modules/normalize.css/normalize.css
 ## list-selectors
 
 ```bash
-$ yarn run list-selectors -- node_modules/normalize.css/normalize.css --pretty --include selectors
+$ yarn run list-selectors node_modules/normalize.css/normalize.css --pretty --include selectors
 $ list-selectors node_modules/normalize.css/normalize.css --pretty --include selectors
 {
     "selectors": [
@@ -129,7 +129,7 @@ $ list-selectors node_modules/normalize.css/normalize.css --pretty --include sel
 ## CSS Shampoo
 
 ```bash
-$ yarn run csss -- node_modules/normalize.css/normalize.css
+$ yarn run csss node_modules/normalize.css/normalize.css
 $ csss --files node_modules/normalize.css/normalize.css
 CSSS START
 
@@ -177,7 +177,7 @@ CSSS END
 ## PARKER
 
 ```bash
-$ yarn run parker -- node_modules/normalize.css/normalize.css
+$ yarn run parker node_modules/normalize.css/normalize.css
 $ parker node_modules/normalize.css/normalize.css
 PARKER-JS
 Total Stylesheets: 1
@@ -206,7 +206,7 @@ The path is executed even with 404.
 ## StyleStats
 
 ```bash
-$ yarn run stylestats -- node_modules/normalize.css/normalize.css
+$ yarn run stylestats node_modules/normalize.css/normalize.css
 $ stylestats -p node_modules/normalize.css/normalize.css
  StyleStats!
 ┌─────────────────────────────────┬────────────────────────────────────────────┐
