@@ -6,12 +6,14 @@
   "scripts": {
     "stylestats": "stylestats -p",
     "parker": "parker",
+    "list-selectors": "list-selectors",
     "test": "parker node_modules/normalize.css/normalize.css",
     "stop": "echo \"Error: no echo specified\" "
   },
   "author": "tomonari takai <takai01010100@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "list-selectors": "^2.0.0",
     "normalize.css": "^8.0.0",
     "parker": "^0.0.10",
     "stylestats": "^7.0.1"

@@ -56,6 +56,76 @@ Media Queries:
 
 The path is executed even with 404.
 
+### Package - list-selectors
+
+```bash
+$ yarn run list-selectors -- {file/to/path}
+```
+
+Test result
+
+```bash
+$ yarn run list-selectors -- node_modules/normalize.css/normalize.css
+$ list-selectors node_modules/normalize.css/normalize.css
+{"selectors":["::-webkit-file-upload-button","a","abbr[title]","b","body","button","button::-moz-focus-inner","button:-moz-focusring","code","details","fieldset","h1","[hidden]","hr","html","img","input","kbd","legend","optgroup","pre","progress","samp","select","small","strong","sub","summary","sup","template","textarea","[type=\"button\"]","[type=\"button\"]::-moz-focus-inner","[type=\"button\"]:-moz-focusring","[type=\"checkbox\"]","[type=\"number\"]::-webkit-inner-spin-button","[type=\"number\"]::-webkit-outer-spin-button","[type=\"radio\"]","[type=\"reset\"]","[type=\"reset\"]::-moz-focus-inner","[type=\"reset\"]:-moz-focusring","[type=\"search\"]","[type=\"search\"]::-webkit-search-decoration","[type=\"submit\"]","[type=\"submit\"]::-moz-focus-inner","[type=\"submit\"]:-moz-focusring"],"simpleSelectors":{"all":["a","abbr","b","body","button","code","details","fieldset","h1","[hidden]","hr","html","img","input","kbd","legend","optgroup","pre","progress","samp","select","small","strong","sub","summary","sup","template","textarea","[title]","[type=\"button\"]","[type=\"checkbox\"]","[type=\"number\"]","[type=\"radio\"]","[type=\"reset\"]","[type=\"search\"]","[type=\"submit\"]"],"ids":[],"classes":[],"attributes":["[hidden]","[title]","[type=\"button\"]","[type=\"checkbox\"]","[type=\"number\"]","[type=\"radio\"]","[type=\"reset\"]","[type=\"search\"]","[type=\"submit\"]"],"types":["a","abbr","b","body","button","code","details","fieldset","h1","hr","html","img","input","kbd","legend","optgroup","pre","progress","samp","select","small","strong","sub","summary","sup",
+✨  Done in 0.47s.
+```
+
+```bash
+$ yarn run list-selectors -- node_modules/normalize.css/normalize.css --pretty --include selectors
+$ list-selectors node_modules/normalize.css/normalize.css --pretty --include selectors
+{
+    "selectors": [
+        "::-webkit-file-upload-button",
+        "a",
+        "abbr[title]",
+        "b",
+        "body",
+        "button",
+        "button::-moz-focus-inner",
+        "button:-moz-focusring",
+        "code",
+        "details",
+        "fieldset",
+        "h1",
+        "[hidden]",
+        "hr",
+        "html",
+        "img",
+        "input",
+        "kbd",
+        "legend",
+        "optgroup",
+        "pre",
+        "progress",
+        "samp",
+        "select",
+        "small",
+        "strong",
+        "sub",
+        "summary",
+        "sup",
+        "template",
+        "textarea",
+        "[type=\"button\"]",
+        "[type=\"button\"]::-moz-focus-inner",
+        "[type=\"button\"]:-moz-focusring",
+        "[type=\"checkbox\"]",
+        "[type=\"number\"]::-webkit-inner-spin-button",
+        "[type=\"number\"]::-webkit-outer-spin-button",
+        "[type=\"radio\"]",
+        "[type=\"reset\"]",
+        "[type=\"reset\"]::-moz-focus-inner",
+        "[type=\"reset\"]:-moz-focusring",
+        "[type=\"search\"]",
+        "[type=\"search\"]::-webkit-search-decoration",
+        "[type=\"submit\"]",
+        "[type=\"submit\"]::-moz-focus-inner",
+        "[type=\"submit\"]:-moz-focusring"
+    ]
+✨  Done in 0.45s.
+```
+
 ### Package - StyleStats
 
 ```bash
