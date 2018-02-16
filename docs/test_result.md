@@ -9,7 +9,6 @@ I did a test run of the package. Below is a description of what type of report i
 - [CSS Shampoo](#css-shampoo)
 - [PARKER](#parker)
 - [StyleStats](#stylestats)
-- [CSSLint](#csslint)
 
 ## analyze-css
 
@@ -247,16 +246,4 @@ $ stylestats --prettify --format json node_modules/normalize.css/normalize.css
   "Media Queries": 0
 }
 ✨  Done in 0.49s.
-```
-
-## CSSLint
-
-```bash
-$ yarn run csslint node_modules/normalize.css/normalize.css
-yarn run v1.3.2
-$ csslint --errors=empty-rules,regex-selectors,fallback-colors,display-property-grouping,box-model,vendor-prefix node_modules/normalize.css/normalize.css
-
-
-csslint: No errors in analyze-css/node_modules/normalize.css/normalize.css.
-✨  Done in 0.28s.
 ```

@@ -20,6 +20,7 @@ $ yarn run csss {path/to/file}
 $ yarn run parker {path/to/file}
 $ yarn run stylestats {path/to/file}
 $ yarn run csslint {path/to/file}
+$ yarn run stylelint {path/to/file}
 ```
 
 ### Execution results
@@ -30,7 +31,6 @@ $ yarn run csslint {path/to/file}
   - [CSS Shampoo](docs/test_result.md#css-shampoo)
   - [PARKER](docs/test_result.md#parker)
   - [StyleStats](docs/test_result.md#stylestats)
-  - [CSSLint](docs/test_result.md#csslint)
 
 ***
 
@@ -53,7 +53,7 @@ $ yarn run csslint {path/to/file}
 
 **Reference**
 
-| Repository                                                                      | Forks                                                                          | Issues                                                                           | Stars                                                                               |
+| Repository                                                                      | Forks                                                                          | Issues                                                                           | Stars                                                                          |
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | [macbre/analyze-css](https://github.com/macbre/analyze-css)                     | ![forks](https://img.shields.io/github/forks/macbre/analyze-css.svg)           | ![issues](https://img.shields.io/github/issues/macbre/analyze-css.svg)           | ![stars](https://img.shields.io/github/stars/macbre/analyze-css.svg)           |
 | [davidtheclark/list-selectors](https://github.com/davidtheclark/list-selectors) | ![forks](https://img.shields.io/github/forks/davidtheclark/list-selectors.svg) | ![issues](https://img.shields.io/github/issues/davidtheclark/list-selectors.svg) | ![stars](https://img.shields.io/github/stars/davidtheclark/list-selectors.svg) |
@@ -61,6 +61,7 @@ $ yarn run csslint {path/to/file}
 | [katiefenn/parker](https://github.com/katiefenn/parker)                         | ![forks](https://img.shields.io/github/forks/katiefenn/parker.svg)             | ![issues](https://img.shields.io/github/issues/katiefenn/parker.svg)             | ![stars](https://img.shields.io/github/stars/katiefenn/parker.svg)             |
 | [t32k/stylestats](https://github.com/t32k/stylestats)                           | ![forks](https://img.shields.io/github/forks/t32k/stylestats.svg)              | ![issues](https://img.shields.io/github/issues/t32k/stylestats.svg)              | ![stars](https://img.shields.io/github/stars/t32k/stylestats.svg)              |
 | [CSSLint/csslint](https://github.com/CSSLint/csslint)                           | ![forks](https://img.shields.io/github/forks/CSSLint/csslint.svg)              | ![issues](https://img.shields.io/github/issues/CSSLint/csslint.svg)              | ![stars](https://img.shields.io/github/stars/CSSLint/csslint.svg)              |
+| [stylelint/stylelint](https://github.com/stylelint/stylelint)                   | ![forks](https://img.shields.io/github/forks/stylelint/stylelint.svg)          | ![issues](https://img.shields.io/github/issues/stylelint/stylelint.svg)          | ![stars](https://img.shields.io/github/stars/stylelint/stylelint.svg)          |
 
 * [CSSLintのRulesの超訳](https://gist.github.com/hail2u/1303613)
 
