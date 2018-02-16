@@ -6,20 +6,39 @@
   "scripts": {
     "stylestats": "stylestats --prettify --format json",
     "parker": "parker",
+    "stylelint": "stylelint",
+    "csslint": "csslint --errors=empty-rules,regex-selectors,fallback-colors,display-property-grouping,vendor-prefix",
     "csss": "csss --files",
     "analyze-css": "analyze-css --pretty --file",
     "list-selectors": "list-selectors",
     "test": "parker node_modules/normalize.css/normalize.css",
     "stop": "echo \"Error: no echo specified\" "
   },
+  "stylelint": {
+    "rules": {
+      "no-duplicate-selectors": true,
+      "no-empty-source": true,
+      "block-no-empty": true,
+      "property-no-unknown": true,
+      "selector-type-no-unknown": true,
+      "selector-pseudo-element-no-unknown": true,
+      "comment-no-empty": true,
+      "no-eol-whitespace": true,
+      "function-max-empty-lines": 2,
+      "max-empty-lines": 2,
+      "no-missing-end-of-source-newline": true
+    }
+  },
   "author": "tomonari takai <takai01010100@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "analyze-css": "^0.12.5",
+    "csslint": "^1.0.5",
     "csss": "^1.1.1",
     "list-selectors": "^2.0.0",
     "normalize.css": "^8.0.0",
     "parker": "^0.0.10",
+    "stylelint": "^8.4.0",
     "stylestats": "^7.0.1"
   }
 }
