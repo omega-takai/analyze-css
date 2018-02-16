@@ -207,90 +207,43 @@ The path is executed even with 404.
 
 ```bash
 $ yarn run stylestats node_modules/normalize.css/normalize.css
-$ stylestats -p node_modules/normalize.css/normalize.css
- StyleStats!
-┌─────────────────────────────────┬────────────────────────────────────────────┐
-│ Published                       │ February 15, 2018 12:48 PM                 │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Paths                           │ node_modules/normalize.css/normalize.css   │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Style Sheets                    │ 1                                          │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Style Elements                  │ 0                                          │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Size                            │ 6.1KB                                      │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Data URI Size                   │ 0                                          │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Ratio of Data URI Size          │ 0                                          │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Gzipped Size                    │ 1.7KB                                      │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Rules                           │ 33                                         │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Selectors                       │ 54                                         │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Declarations                    │ 56                                         │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Simplicity                      │ 61.1%                                      │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Average of Identifier           │ 1.685                                      │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Most Identifier                 │ 4                                          │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Most Identifier Selector        │ [type="search"]::-webkit-search-decoration │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Average of Cohesion             │ 2.606                                      │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Lowest Cohesion                 │ 12                                         │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Lowest Cohesion Selector        │ legend                                     │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Total Unique Font Sizes         │ 5                                          │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Unique Font Sizes               │ 1em                                        │
-│                                 │ 2em                                        │
-│                                 │ 75%                                        │
-│                                 │ 80%                                        │
-│                                 │ 100%                                       │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Total Unique Font Families      │ 2                                          │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Unique Font Families            │ inherit                                    │
-│                                 │ monospace, monospace                       │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Total Unique Colors             │ 0                                          │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Unique Colors                   │ N/A                                        │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Total Unique Background Images  │ 0                                          │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Unique Background Images        │ N/A                                        │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ ID Selectors                    │ 0                                          │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Universal Selectors             │ 0                                          │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Unqualified Attribute Selectors │ 8                                          │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ JavaScript Specific Selectors   │ 0                                          │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Important Keywords              │ 0                                          │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Float Properties                │ 0                                          │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Properties Count                │ font-size: 6                               │
-│                                 │ display: 5                                 │
-│                                 │ padding: 4                                 │
-│                                 │ -webkit-appearance: 4                      │
-│                                 │ line-height: 3                             │
-│                                 │ margin: 3                                  │
-│                                 │ box-sizing: 3                              │
-│                                 │ overflow: 3                                │
-│                                 │ font-family: 3                             │
-│                                 │ height: 2                                  │
-├─────────────────────────────────┼────────────────────────────────────────────┤
-│ Media Queries                   │ 0                                          │
-└─────────────────────────────────┴────────────────────────────────────────────┘
-✨  Done in 0.64s.
+yarn run v1.3.2
+$ stylestats --prettify --format json node_modules/normalize.css/normalize.css
+{
+  "Published": "February 16, 2018 1:07 PM",
+  "Paths": "node_modules/normalize.css/normalize.css",
+  "Style Sheets": 1,
+  "Style Elements": 0,
+  "Size": "6.1KB",
+  "Data URI Size": "0",
+  "Ratio of Data URI Size": "0",
+  "Gzipped Size": "1.7KB",
+  "Rules": 33,
+  "Selectors": 54,
+  "Declarations": 56,
+  "Simplicity": "61.1%",
+  "Average of Identifier": "1.685",
+  "Most Identifier": 4,
+  "Most Identifier Selector": "[type=\"search\"]::-webkit-search-decoration",
+  "Average of Cohesion": "2.606",
+  "Lowest Cohesion": 12,
+  "Lowest Cohesion Selector": "legend",
+  "Total Unique Font Sizes": 5,
+  "Unique Font Sizes": "1em\n2em\n75%\n80%\n100%",
+  "Total Unique Font Families": 2,
+  "Unique Font Families": "inherit\nmonospace, monospace",
+  "Total Unique Colors": 0,
+  "Unique Colors": "N/A",
+  "Total Unique Background Images": 0,
+  "Unique Background Images": "N/A",
+  "ID Selectors": 0,
+  "Universal Selectors": 0,
+  "Unqualified Attribute Selectors": 8,
+  "JavaScript Specific Selectors": 0,
+  "Important Keywords": 0,
+  "Float Properties": 0,
+  "Properties Count": "font-size: 6\ndisplay: 5\npadding: 4\n-webkit-appearance: 4\nline-height: 3\nmargin: 3\nbox-sizing: 3\noverflow: 3\nfont-family: 3\nheight: 2",
+  "Media Queries": 0
+}
+✨  Done in 0.49s.
 ```

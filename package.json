@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": "https://github.com/t--takai/analyze-css.git",
   "scripts": {
-    "stylestats": "stylestats -p",
+    "stylestats": "stylestats --prettify --format json",
     "parker": "parker",
     "csss": "csss --files",
     "analyze-css": "analyze-css --pretty --file",
