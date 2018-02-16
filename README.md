@@ -19,6 +19,7 @@ $ yarn run list-selectors {path/to/file} --pretty --include selectors
 $ yarn run csss {path/to/file}
 $ yarn run parker {path/to/file}
 $ yarn run stylestats {path/to/file}
+$ yarn run csslint {path/to/file}
 ```
 
 ### Execution results
@@ -29,6 +30,7 @@ $ yarn run stylestats {path/to/file}
   - [CSS Shampoo](docs/test_result.md#css-shampoo)
   - [PARKER](docs/test_result.md#parker)
   - [StyleStats](docs/test_result.md#stylestats)
+  - [CSSLint](docs/test_result.md#csslint)
 
 ***
 
@@ -58,6 +60,9 @@ $ yarn run stylestats {path/to/file}
 | [webycel/csss](https://github.com/webycel/csss)                                 | ![forks](https://img.shields.io/github/forks/webycel/csss.svg)                 | ![issues](https://img.shields.io/github/issues/webycel/csss.svg)                 | ![stars](https://img.shields.io/github/stars/webycel/csss.svg)                 |
 | [katiefenn/parker](https://github.com/katiefenn/parker)                         | ![forks](https://img.shields.io/github/forks/katiefenn/parker.svg)             | ![issues](https://img.shields.io/github/issues/katiefenn/parker.svg)             | ![stars](https://img.shields.io/github/stars/katiefenn/parker.svg)             |
 | [t32k/stylestats](https://github.com/t32k/stylestats)                           | ![forks](https://img.shields.io/github/forks/t32k/stylestats.svg)              | ![issues](https://img.shields.io/github/issues/t32k/stylestats.svg)              | ![stars](https://img.shields.io/github/stars/t32k/stylestats.svg)              |
+| [CSSLint/csslint](https://github.com/CSSLint/csslint)                           | ![forks](https://img.shields.io/github/forks/CSSLint/csslint.svg)              | ![issues](https://img.shields.io/github/issues/CSSLint/csslint.svg)              | ![stars](https://img.shields.io/github/stars/CSSLint/csslint.svg)              |
+
+* [CSSLintのRulesの超訳](https://gist.github.com/hail2u/1303613)
 
 * **Interested**
   * https://github.com/cssstats/cssstats

@@ -6,6 +6,7 @@
   "scripts": {
     "stylestats": "stylestats --prettify --format json",
     "parker": "parker",
+    "csslint": "csslint --errors=empty-rules,regex-selectors,fallback-colors,display-property-grouping,vendor-prefix",
     "csss": "csss --files",
     "analyze-css": "analyze-css --pretty --file",
     "list-selectors": "list-selectors",
@@ -16,6 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "analyze-css": "^0.12.5",
+    "csslint": "^1.0.5",
     "csss": "^1.1.1",
     "list-selectors": "^2.0.0",
     "normalize.css": "^8.0.0",
