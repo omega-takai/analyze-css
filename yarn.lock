@@ -34,7 +34,7 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
-analyze-css@^0.12.5:
+analyze-css@0.12.5:
   version "0.12.5"
   resolved "https://registry.yarnpkg.com/analyze-css/-/analyze-css-0.12.5.tgz#0e8bc39c7b0237b33724962aee6a5dc191625f44"
   dependencies:
@@ -444,14 +444,14 @@ css@2.2.x, css@^2.1.0, css@^2.2.1:
     source-map-resolve "^0.3.0"
     urix "^0.1.0"
 
-csslint@^1.0.5:
+csslint@1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/csslint/-/csslint-1.0.5.tgz#19cc3eda322160fd3f7232af1cb2a360e898a2e9"
   dependencies:
     clone "~2.1.0"
     parserlib "~1.1.1"
 
-csss@^1.1.1:
+csss@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/csss/-/csss-1.1.1.tgz#9c78abeedb8f352d31cfc20954c2035336b9d264"
   dependencies:
@@ -1246,7 +1246,7 @@ lazy-cache@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/lazy-cache/-/lazy-cache-1.0.4.tgz#a1d78fc3a50474cb80845d3b3b6e1da49a446e8e"
 
-list-selectors@^2.0.0:
+list-selectors@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/list-selectors/-/list-selectors-2.0.0.tgz#cdeac98866b7deea2889fab1c46d01eac44c7486"
   dependencies:
@@ -1581,7 +1581,7 @@ normalize-selector@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/normalize-selector/-/normalize-selector-0.2.0.tgz#d0b145eb691189c63a78d201dc4fdb1293ef0c03"
 
-normalize.css@^8.0.0:
+normalize.css@8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.0.tgz#14ac5e461612538a4ce9be90a7da23f86e718493"
 
@@ -1651,7 +1651,7 @@ p-try@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-1.0.0.tgz#cbc79cdbaf8fd4228e13f621f2b1a237c1b207b3"
 
-parker@^0.0.10:
+parker@0.0.10:
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/parker/-/parker-0.0.10.tgz#b72604f5e3ced31a2b06128e449670f68dd5dc20"
   dependencies:
@@ -2187,7 +2187,7 @@ style-search@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/style-search/-/style-search-0.1.0.tgz#7958c793e47e32e07d2b5cafe5c0bf8e12e77902"
 
-stylelint@^8.4.0:
+stylelint@8.4.0:
   version "8.4.0"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-8.4.0.tgz#c2dbaeb17236917819f9206e1c0df5fddf6f83c3"
   dependencies:
@@ -2231,7 +2231,7 @@ stylelint@^8.4.0:
     svg-tags "^1.0.0"
     table "^4.0.1"
 
-stylestats@^7.0.1:
+stylestats@7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/stylestats/-/stylestats-7.0.1.tgz#e31801f6785adcdbf3174d2dfd65305fd5b661e6"
   dependencies:

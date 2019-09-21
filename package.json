@@ -32,13 +32,13 @@
   "author": "tomonari takai <takai01010100@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "analyze-css": "^0.12.5",
-    "csslint": "^1.0.5",
-    "csss": "^1.1.1",
-    "list-selectors": "^2.0.0",
-    "normalize.css": "^8.0.0",
-    "parker": "^0.0.10",
-    "stylelint": "^8.4.0",
-    "stylestats": "^7.0.1"
+    "analyze-css": "0.12.5",
+    "csslint": "1.0.5",
+    "csss": "1.1.1",
+    "list-selectors": "2.0.0",
+    "normalize.css": "8.0.0",
+    "parker": "0.0.10",
+    "stylelint": "8.4.0",
+    "stylestats": "7.0.1"
   }
 }
